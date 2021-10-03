@@ -41,3 +41,8 @@ sed -i "68c DEFAULT_INDEX_URL = 'file://$str/rosdistro-master/index-v4.yaml'" /u
 
 sudo rosdep init
 sudo rosdep update
+sudo apt install python3-rosinstall python3-rosinstall-generator python3-wstool
+sudo apt install python3-roslaunch
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+echo "安装已完成，请手动配置变量"
